@@ -1,7 +1,5 @@
-import rock from './images/rock.png';
-import scissors from './images/scissors.png';
-import paper from './images/paper.png';
 import styles from './App.module.css'
+import Image from 'next/image';
 function Pick(props){
     let type = props.type;
     let handleOnClick =(e)=>{
@@ -22,13 +20,13 @@ function Pick(props){
         }
     }
     if(type==='scissors'){
-        return <img className={styles.img} src={scissors} alt='scissors' onClick={handleOnClick}></img>
+        return <Image className={styles.img} width={3000} height={3000} src="/images/scissors.png" alt='scissors' onClick={handleOnClick}></Image>
     }
     else if(type==='rock'){
-        return <img className={styles.img} src={rock} alt='rock' onClick={handleOnClick}></img>
+        return <img className={styles.img} height={349} width={425} src="/images/rock.png" alt='rock' onClick={handleOnClick}></img>
     }
     else if(type==='paper'){
-        return <img className={styles.img} src={paper} alt='paper' onClick={handleOnClick}></img>
+        return <img className={styles.img} height={1200} width={1200} src="/images/paper.png" alt='paper' onClick={handleOnClick}></img>
     }
 }
 export default Pick;
