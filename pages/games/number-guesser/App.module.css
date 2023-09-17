@@ -2,10 +2,10 @@
   text-align: center;
   overflow-x: hidden;
 }
-::placeholder{
+.input::placeholder{
   color:rgb(0, 191, 255);
 }
-h2{
+.h2{
   border-color: rgb(235, 110, 131);
   border-style: dotted;
   border-width: 5px;
@@ -50,7 +50,7 @@ h2{
 .App-link {
   color: #61dafb;
 }
-button{
+.button{
   background-color: rgb(56, 222, 56);
   width:fit-content;
   height: fit-content;
@@ -63,14 +63,14 @@ button{
   text-align: center;
   justify-content:center;
 }
-button:hover{
+.button:hover{
   background-color: lightgreen;
   color:rgb(57, 54, 54);
 }
 /*
   The text box that is in the top blue square
 */
-text{
+.text{
   font-size: 2.75vw;
   color:darkblue;
   text-align: center;
@@ -80,7 +80,7 @@ text{
 /*
   the bottom blue sqaure, this is an input element
 */
-input{
+.input{
   font-size: 3.7vw;
   min-width: 13vw;
   max-width: 13vw;

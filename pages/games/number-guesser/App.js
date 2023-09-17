@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
-//import './App.css';
+import styles from './App.module.css';
 let ans = Math.floor(Math.random()*100)+1;//the answer to check on between 1 and 100 inclusive
 let trackBest = 100;
 function App() {
@@ -58,26 +58,26 @@ function App() {
     }
   }
   return (
-    <div className="App">
+    <div className={styles.App}>
       <head>
         <title>Number Guesser</title>
       </head>
       <h1>
       Number Guesser
       </h1>
-      <h2>
+      <h2 className={styles.h2}>
         Pick a number between 1-100
       </h2>
-      <div className='top part'>
-        <text >
+      <div className={`${styles.top} ${styles.part}`}>
+        <text className={styles.text}>
           {outputMessage}
         </text>
       </div>
-      <input type = 'number' value={userInput} onChange = {handleInputChange} placeholder='Guess' max={100} min={1}>
+      <input className={styles.input} type = 'number' value={userInput} onChange = {handleInputChange} placeholder='Guess' max={100} min={1}>
           
       </input>
       <br></br>
-      <button onClick = {handleOnClick}>
+      <button className={styles.button} onClick = {handleOnClick}>
         {buttonMessage}
       </button>
       <h3>Current tries: {currentScore} <br></br>Best attempt: {bestScore}</h3>

@@ -20,7 +20,7 @@ function Pick(props){
         }
     }
     if(type==='scissors'){
-        return <Image className={styles.img} width={3000} height={3000} src="/images/scissors.png" alt='scissors' onClick={handleOnClick}></Image>
+        return <Image className={styles.img} width={1000} height={1000} src="/images/scissors.png" alt='scissors' onClick={handleOnClick}></Image>
     }
     else if(type==='rock'){
         return <img className={styles.img} height={349} width={425} src="/images/rock.png" alt='rock' onClick={handleOnClick}></img>
