@@ -28,26 +28,36 @@ export default function Home() {
             <div class="skills">
                 <h2>Skills</h2>
                 <div className = {styles['skills-container']}>
-                    <img className={styles.html} src="./images//html-icon.png" alt="HTML icon"/>  
-                    <img className={styles.css} src="./images/css-icon.png" alt="CSS icon"/>
-                    <img src="./images/javascript-programming-language-icon.png" alt="Javascript icon"/>
-                    <img className={styles.java} src="./images/java-programming-language-icon.png" alt="Java icon"/>
-                    <img className={styles.node} src="./images/nodejs-1-logo.png" alt="Node JS icon"/>
-                    <img src="./images/python-programming-language-icon.png" alt="Python icon"/>
-                    <img src="./images/git-icon.png" alt="Git icon"/>
-                    <img src="./images/react-js-icon.png" alt="React icon"/>
+                    <img className={styles.icon} src="./images//html-icon.png" alt="HTML icon"/>  
+                    <img className={styles.icon} src="./images/css-icon.png" alt="CSS icon"/>
+                    <img className={styles.icon} src="./images/javascript-programming-language-icon.png" alt="Javascript icon"/>
+                    <img className={styles.icon} src="./images/java-programming-language-icon.png" alt="Java icon"/>
+                    <img className={styles.icon} src="./images/nodejs-1-logo.png" alt="Node JS icon"/>
+                    <img className={styles.icon} src="./images/python-programming-language-icon.png" alt="Python icon"/>
+                    <img className={styles.icon} src="./images/git-icon.png" alt="Git icon"/>
+                    <img className={styles.icon} src="./images/react-js-icon.png" alt="React icon"/>
                 </div>
             </div>
         </div>
-        <div classNamev = {styles.picture}>
-            <img src="https://c4.wallpaperflare.com/wallpaper/560/855/635/spy-x-family-anya-forger-hd-wallpaper-preview.jpg"
-            alt="Anya smug face"/>
+        <div className = {styles.picture}>
+            <img src="/images/me.jpg" alt="Benjamin Kang" className={styles.me}/>
         </div>
       </div>
       <div className ="projects">
           <div class="my-website">
               <h2>Projects</h2>
-              <h3>This website</h3>
+              <ul>
+                <li>
+                    <h3> <strong>This Website</strong> <code>&#8212;</code> <i className={styles.right}>Next.js, React.js, HTML/CSS, Javascript</i> </h3>
+                </li>
+                <li>
+                    <h3><Link href="/games/rock-paper-scissors/App" target='_blank'>Rock Paper Scissors</Link> <code>&#8212;</code> <i className={styles.right}> React.js, HTML/CSS, Javascript</i> </h3>
+                </li>
+                <li>
+                <h3><Link href="/games/number-guesser/App" target="_blank">Number Guesser</Link> <code>&#8212;</code> <i className={styles.right}> React.js, HTML/CSS, Javascript</i> </h3>
+                </li>
+
+              </ul>
           </div>
       </div> 
         </main> 

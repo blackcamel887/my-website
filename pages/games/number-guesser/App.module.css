@@ -2,6 +2,9 @@
   text-align: center;
   overflow-x: hidden;
 }
+.body{
+  margin:0;
+}
 .input::placeholder{
   color:rgb(0, 191, 255);
 }

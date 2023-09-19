@@ -29,30 +29,35 @@
     margin:0;
     margin-top: 4px;
 }
-.skills-container img{
-    height: 8%;
-    width: 8%;
+.icon{
+    height: auto;
+    width: 3.8vw;
     padding-right: 10px;
-}
+}   
 .picture {
-    width: inherit;
-    margin-right: 50px;
+    position:absolute;
+    right:2vw;
+    margin-right: 2vw;
 }
 .information{
-    width:inherit;
+    width:50vw;
 }
-.picture img{
+.me{
     margin-top: 110px;
     margin-left: 20px;
-    width:90%;
-    height: 400px;
+    margin-right: 100px ;
+    width:20vw;
+    height: auto;
+
+}
+.project{
+    margin-top: 0;
 }
 .contact h2{
     text-decoration: underline;
 }
 .contact{
     text-align: center;
-    padding-top: 20px;
 }
 .github, .mail, .discord{
     height: 50px;
@@ -72,3 +77,6 @@
     height:7%;
     width: 7%;
  }
+.right{
+    font-size: 90%;
+}

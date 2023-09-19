@@ -3,6 +3,9 @@
   height: fit-content;
   width: fit-content;
 }
+.body{
+  margin:0;
+}
 /*
   The top half of the screen
 */

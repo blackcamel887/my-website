@@ -12,5 +12,8 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "web-vitals": "^3.4.0"
   }
 }

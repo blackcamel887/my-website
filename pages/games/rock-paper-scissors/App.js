@@ -3,6 +3,7 @@ import Choices from './Choices';
 import Score from './Score';
 import { useEffect, useState } from "react";
 function App() {
+  useEffect( () => { document.querySelector("body").classList.add(styles.body) } );
   let [userScore,setUserScore] = useState(0);//the state for user's score
   let [botScore,setBotScore] = useState(0);//the state for bot's score
   let [gameState,setGameState] = useState('default');//the state for the state of the game, initallized as the default state

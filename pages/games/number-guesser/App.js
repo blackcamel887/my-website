@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import styles from './App.module.css';
 let ans = Math.floor(Math.random()*100)+1;//the answer to check on between 1 and 100 inclusive
 let trackBest = 100;
 function App() {
+  useEffect( () => { document.querySelector("body").classList.add(styles.body) } );
   let [userInput,setUserInput] = useState();//the holder for the userInput
   let [outputMessage,setOutputMessage] = useState('?');//the holder for the message for user
   let [gameState,setGameState] = useState('default');//game state holder
@@ -59,9 +60,6 @@ function App() {
   }
   return (
     <div className={styles.App}>
-      <head>
-        <title>Number Guesser</title>
-      </head>
       <h1>
       Number Guesser
       </h1>
