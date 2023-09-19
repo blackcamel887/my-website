@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Ysabeau Office';
+    src: url(./fonts/YsabeauOffice-VariableFont_wght.ttf);
+}
 .body{
     font-family: 'Ysabeau Office', sans-serif;
     margin-left: 100px;

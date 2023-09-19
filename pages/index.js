@@ -3,16 +3,14 @@ import styles from './mySite.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect } from 'react';
+import {YsabeauOffice} from 'next/font/google';
 export default function Home() {
   useEffect( () => { document.querySelector("body").classList.add(styles.body) } );
   return (
     <div>
       <Head>
         <title>Benjamin Kang's Website</title>
-        <Link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+        <Link rel="icon" href="/favicon.ico" />                          
       </Head>
       <main >
       <div className={styles['whole-site']}>
@@ -21,12 +19,11 @@ export default function Home() {
                 <h1>Benjamin Kang</h1>
                 <h2>About Me</h2>   
                 <p>Hi! I'm Ben, a 2nd-year computer science student studing at the University 
-                of Wisconsin Madison. Currently, I am focusing on learning frontend development.
-                 I love to challenge myself with difficult tasks and improve along the process. I enjoy learning
+                of Wisconsin Madison. Currently, I am focusing on learning frontend developement. I love to challenge myself with difficult tasks and improve along the process. I enjoy learning
                 new things and understanding how things work. Some of my hobbies include playing games and tennis. 
                 </p>
             </div>
-            <div class="skills">
+            <div className="skills">
                 <h2>Skills</h2>
                 <div className = {styles['skills-container']}>
                     <img className={styles.icon} src="./images//html-icon.png" alt="HTML icon"/>  
@@ -45,7 +42,7 @@ export default function Home() {
         </div>
       </div>
       <div className ="projects">
-          <div class="my-website">
+          <div className="my-website">
               <h2>Projects</h2>
               <ul>
                 <li>
@@ -65,7 +62,7 @@ export default function Home() {
         <footer>
             <div className = {styles.contact}>
                 <h2>Contact</h2>
-                <div classname ={styles["contact-icons"]}>
+                <div className ={styles["contact-icons"]}>
                     <a href="mailto:pajamas887@gmail.com"><img className={styles.mail} src="./images/Mail-02.png" alt="Mail icon"/></a>
                     <a href=""><img className = {styles.discord} src="./images/discord-black-icon.png" alt="Discord icon"/></a>
                     <a href="https://github.com/blackcamel887"><img className={styles.github} src="./images/github-icon.png" alt="Github icon"/></a>
