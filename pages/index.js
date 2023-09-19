@@ -21,7 +21,8 @@ export default function Home() {
                 <h1>Benjamin Kang</h1>
                 <h2>About Me</h2>   
                 <p>Hi! I'm Ben, a 2nd-year computer science student studing at the University 
-                of Wisconsin Madison. I love to challenge myself with difficult tasks and improve along the process. I enjoy learning
+                of Wisconsin Madison. Currently, I am focusing on learning frontend development.
+                 I love to challenge myself with difficult tasks and improve along the process. I enjoy learning
                 new things and understanding how things work. Some of my hobbies include playing games and tennis. 
                 </p>
             </div>
