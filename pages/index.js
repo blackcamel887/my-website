@@ -1,132 +1,66 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from './mySite.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useEffect } from 'react';
 export default function Home() {
+  useEffect( () => { document.querySelector("body").classList.add(styles.body) } );
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Benjamin Kang's Website</title>
+        <Link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
       </Head>
-
-      <main>
-        <h1 className={styles.title}>
-          Learn  <Link href="/games/number-guesser/App" target='_blank'>Next.js!</Link>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code><Link href="/games/rock-paper-scissors/App">RPS</Link></code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <main >
+      <div className={styles['whole-site']}>
+        <div className = {styles.information}>
+            <div className = {styles['about-me']}>
+                <h1>Benjamin Kang</h1>
+                <h2>About Me</h2>   
+                <p>Hi! I'm Ben, a 2nd-year computer science student studing at the University 
+                of Wisconsin Madison. I love to challenge myself with difficult tasks and improve along the process. I enjoy learning
+                new things and understanding how things work. Some of my hobbies include playing games and tennis. 
+                </p>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <div className = {styles['skills-container']}>
+                    <img className={styles.html} src="./images//html-icon.png" alt="HTML icon"/>  
+                    <img className={styles.css} src="./images/css-icon.png" alt="CSS icon"/>
+                    <img src="./images/javascript-programming-language-icon.png" alt="Javascript icon"/>
+                    <img className={styles.java} src="./images/java-programming-language-icon.png" alt="Java icon"/>
+                    <img className={styles.node} src="./images/nodejs-1-logo.png" alt="Node JS icon"/>
+                    <img src="./images/python-programming-language-icon.png" alt="Python icon"/>
+                    <img src="./images/git-icon.png" alt="Git icon"/>
+                    <img src="./images/react-js-icon.png" alt="React icon"/>
+                </div>
+            </div>
         </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family:
-            Menlo,
-            Monaco,
-            Lucida Console,
-            Liberation Mono,
-            DejaVu Sans Mono,
-            Bitstream Vera Sans Mono,
-            Courier New,
-            monospace;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+        <div classNamev = {styles.picture}>
+            <img src="https://c4.wallpaperflare.com/wallpaper/560/855/635/spy-x-family-anya-forger-hd-wallpaper-preview.jpg"
+            alt="Anya smug face"/>
+        </div>
+      </div>
+      <div className ="projects">
+          <div class="my-website">
+              <h2>Projects</h2>
+              <h3>This website</h3>
+          </div>
+      </div> 
+        </main> 
+        <footer>
+            <div className = {styles.contact}>
+                <h2>Contact</h2>
+                <div classname ={styles["contact-icons"]}>
+                    <a href="mailto:pajamas887@gmail.com"><img className={styles.mail} src="./images/Mail-02.png" alt="Mail icon"/></a>
+                    <a href=""><img className = {styles.discord} src="./images/discord-black-icon.png" alt="Discord icon"/></a>
+                    <a href="https://github.com/blackcamel887"><img className={styles.github} src="./images/github-icon.png" alt="Github icon"/></a>
+                </div>
+            </div>
+        </footer>
+      </div>
   );
 }
