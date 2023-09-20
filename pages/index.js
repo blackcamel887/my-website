@@ -47,10 +47,10 @@ export default function Home() {
                     <h3> <strong>This Website</strong> <code>&#8212;</code> <i className={styles.right}>Next.js, React.js, HTML/CSS, Javascript</i> </h3>
                 </li>
                 <li>
-                    <h3><Link href="../games/rock-paper-scissors/index.js" target='_blank'>Rock Paper Scissors</Link> <code>&#8212;</code> <i className={styles.right}> React.js, HTML/CSS, Javascript</i> </h3>
+                    <h3><Link href="/games/rock-paper-scissors/" target='_blank'>Rock Paper Scissors</Link> <code>&#8212;</code> <i className={styles.right}> React.js, HTML/CSS, Javascript</i> </h3>
                 </li>
                 <li>
-                <h3><Link href="../games/number-guesser/index.js" target="_blank">Number Guesser</Link> <code>&#8212;</code> <i className={styles.right}> React.js, HTML/CSS, Javascript</i> </h3>
+                    <h3><Link href="/number-guesser/" target="_blank">Number Guesser</Link> <code>&#8212;</code> <i className={styles.right}> React.js, HTML/CSS, Javascript</i> </h3>
                 </li>
 
               </ul>
