@@ -11,12 +11,11 @@ export default function Home() {
         <title>Benjamin Kang's Website</title>
       </Head>
       <main >
-    <div className={styles['container']} >
+        <h1 className = {styles.h1}>Benjamin Kang</h1>
         <div className={styles['whole-site']}>
             <div className = {styles.information}>
                 <div className = {styles['about-me']}>
-                    <h1>Benjamin Kang</h1>
-                    <h2>About Me</h2>   
+                    <h2 className={styles.h2}>About Me</h2>   
                     <p>Hi! I'm Ben, a 2nd-year computer science student studing at the University 
                     of Wisconsin Madison. Currently, I am focusing on learning frontend developement. I love to challenge myself with difficult tasks and improve along the process. I enjoy learning
                     new things and understanding how things work. Some of my hobbies include playing games and tennis. 
@@ -39,8 +38,7 @@ export default function Home() {
             <div className = {styles.picture}>
                 <img src="/images/me.jpg" alt="Benjamin Kang" className={styles.me}/>
             </div>
-    </div>
-      </div>
+        </div>
       <div className ="projects">
           <div className="my-website">
               <h2>Projects</h2>
