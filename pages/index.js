@@ -11,33 +11,35 @@ export default function Home() {
         <title>Benjamin Kang's Website</title>
       </Head>
       <main >
-      <div className={styles['whole-site']}>
-        <div className = {styles.information}>
-            <div className = {styles['about-me']}>
-                <h1>Benjamin Kang</h1>
-                <h2>About Me</h2>   
-                <p>Hi! I'm Ben, a 2nd-year computer science student studing at the University 
-                of Wisconsin Madison. Currently, I am focusing on learning frontend developement. I love to challenge myself with difficult tasks and improve along the process. I enjoy learning
-                new things and understanding how things work. Some of my hobbies include playing games and tennis. 
-                </p>
-            </div>
-            <div className="skills">
-                <h2>Skills</h2>
-                <div className = {styles['skills-container']}>
-                    <img className={styles.icon} src="./images//html-icon.png" alt="HTML icon"/>  
-                    <img className={styles.icon} src="./images/css-icon.png" alt="CSS icon"/>
-                    <img className={styles.icon} src="./images/javascript-programming-language-icon.png" alt="Javascript icon"/>
-                    <img className={styles.icon} src="./images/java-programming-language-icon.png" alt="Java icon"/>
-                    <img className={styles.icon} src="./images/nodejs-1-logo.png" alt="Node JS icon"/>
-                    <img className={styles.icon} src="./images/python-programming-language-icon.png" alt="Python icon"/>
-                    <img className={styles.icon} src="./images/git-icon.png" alt="Git icon"/>
-                    <img className={styles.icon} src="./images/react-js-icon.png" alt="React icon"/>
+    <div className={styles['container']} >
+        <div className={styles['whole-site']}>
+            <div className = {styles.information}>
+                <div className = {styles['about-me']}>
+                    <h1>Benjamin Kang</h1>
+                    <h2>About Me</h2>   
+                    <p>Hi! I'm Ben, a 2nd-year computer science student studing at the University 
+                    of Wisconsin Madison. Currently, I am focusing on learning frontend developement. I love to challenge myself with difficult tasks and improve along the process. I enjoy learning
+                    new things and understanding how things work. Some of my hobbies include playing games and tennis. 
+                    </p>
+                </div>
+                <div className="skills">
+                    <h2>Skills</h2>
+                    <div className = {styles['skills-container']}>
+                        <img className={styles.icon} src="./images//html-icon.png" alt="HTML icon"/>  
+                        <img className={styles.icon} src="./images/css-icon.png" alt="CSS icon"/>
+                        <img className={styles.icon} src="./images/javascript-programming-language-icon.png" alt="Javascript icon"/>
+                        <img className={styles.icon} src="./images/java-programming-language-icon.png" alt="Java icon"/>
+                        <img className={styles.icon} src="./images/nodejs-1-logo.png" alt="Node JS icon"/>
+                        <img className={styles.icon} src="./images/python-programming-language-icon.png" alt="Python icon"/>
+                        <img className={styles.icon} src="./images/git-icon.png" alt="Git icon"/>
+                        <img className={styles.icon} src="./images/react-js-icon.png" alt="React icon"/>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div className = {styles.picture}>
-            <img src="/images/me.jpg" alt="Benjamin Kang" className={styles.me}/>
-        </div>
+            <div className = {styles.picture}>
+                <img src="/images/me.jpg" alt="Benjamin Kang" className={styles.me}/>
+            </div>
+    </div>
       </div>
       <div className ="projects">
           <div className="my-website">
