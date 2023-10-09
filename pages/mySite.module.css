@@ -96,7 +96,7 @@
       flex-direction: column; /* Change flex direction to vertical */
     }
     .body {
-        margin-left:5px;
+        margin-left:15px;
     }
     .information {
       min-width: auto; /* Reset the minimum width */
