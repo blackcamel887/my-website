@@ -2,23 +2,7 @@
     font-family: 'Ysabeau Office';
     src: url(./fonts/YsabeauOffice-VariableFont_wght.ttf);
 }
-@media (max-width: 768px) {
-    .whole-site {
-      flex-direction: column; /* Change flex direction to vertical */
-    }
-    .body {
-        margin-left:5px;
-    }
-    .information {
-      min-width: auto; /* Reset the minimum width */
-      width: 100%; /* Take up full width on smaller screens */
-    }
-    .picture{
-      min-width: auto; /* Reset the minimum width */
-      width: 100%; /* Take up full width on smaller screens */
-    }
-  }
-  
+
 .body{
     font-family: 'Ysabeau Office', sans-serif;
     margin-left: 100px;
@@ -107,3 +91,20 @@
 .right{
     font-size: 90%;
 }
+@media screen and (max-width: 768px) {
+    .whole-site {
+      flex-direction: column; /* Change flex direction to vertical */
+    }
+    .body {
+        margin-left:5px;
+    }
+    .information {
+      min-width: auto; /* Reset the minimum width */
+      width: 100%; /* Take up full width on smaller screens */
+    }
+    .picture{
+      min-width: auto; /* Reset the minimum width */
+      width: 100%; /* Take up full width on smaller screens */
+    }
+  }
+  
