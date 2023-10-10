@@ -94,6 +94,12 @@
 .right{
     font-size: 90%;
 }
+@media screen and (max-width: 844px) {/*ipads*/
+    .skills-container{
+        width: 90vw;
+        max-width: none;
+    }
+}
 @media screen and (max-width: 768px) {
     .app{
         align-items: center;
