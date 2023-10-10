@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 export default function Home() {
   useEffect( () => { document.querySelector("body").classList.add(styles.body) } );
   return (
-    <div>
+    <div className={styles.app}>
       <Head>
         <title>Benjamin Kang's Website</title>
       </Head>
@@ -21,18 +21,16 @@ export default function Home() {
                     new things and understanding how things work. Some of my hobbies include playing games and tennis. 
                     </p>
                 </div>
-                <div className="skills">
-                    <h2>Skills</h2>
-                    <div className = {styles['skills-container']}>
-                        <img className={styles.icon} src="./images//html-icon.png" alt="HTML icon"/>  
-                        <img className={styles.icon} src="./images/css-icon.png" alt="CSS icon"/>
-                        <img className={styles.icon} src="./images/javascript-programming-language-icon.png" alt="Javascript icon"/>
-                        <img className={styles.icon} src="./images/java-programming-language-icon.png" alt="Java icon"/>
-                        <img className={styles.icon} src="./images/nodejs-1-logo.png" alt="Node JS icon"/>
-                        <img className={styles.icon} src="./images/python-programming-language-icon.png" alt="Python icon"/>
-                        <img className={styles.icon} src="./images/git-icon.png" alt="Git icon"/>
-                        <img className={styles.icon} src="./images/react-js-icon.png" alt="React icon"/>
-                    </div>
+                <h2>Skills</h2>
+                <div className = {styles['skills-container']}>
+                    <img className={styles.icon} src="./images//html-icon.png" alt="HTML icon"/>  
+                    <img className={styles.icon} src="./images/css-icon.png" alt="CSS icon"/>
+                    <img className={styles.icon} src="./images/javascript-programming-language-icon.png" alt="Javascript icon"/>
+                    <img className={styles.icon} src="./images/java-programming-language-icon.png" alt="Java icon"/>
+                    <img className={styles.icon} src="./images/nodejs-1-logo.png" alt="Node JS icon"/>
+                    <img className={styles.icon} src="./images/python-programming-language-icon.png" alt="Python icon"/>
+                    <img className={styles.icon} src="./images/git-icon.png" alt="Git icon"/>
+                    <img className={styles.icon} src="./images/react-js-icon.png" alt="React icon"/>
                 </div>
             </div>
             <div className = {styles.picture}>

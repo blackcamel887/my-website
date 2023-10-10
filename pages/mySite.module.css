@@ -41,8 +41,8 @@
     margin-top: 4px;
 }
 .icon{
-    height: auto;
-    width: 3.8vw;
+    height: 63px;
+    width:auto;
     padding-right: 10px;
 }
 .information{
@@ -63,6 +63,9 @@
 }
 .project{
     margin-top: 0;
+}
+.skills-container{
+    max-width: 95%;
 }
 .contact h2{
     text-decoration: underline;
@@ -92,8 +95,12 @@
     font-size: 90%;
 }
 @media screen and (max-width: 768px) {
+    .app{
+        align-items: center;
+    }
+
     .whole-site {
-      flex-direction: column; /* Change flex direction to vertical */
+      flex-direction: column-reverse; /* Change flex direction to vertical */
     }
     .body {
         margin-left:15px;
