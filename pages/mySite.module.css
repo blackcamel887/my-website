@@ -118,6 +118,7 @@
     .picture{
       min-width: auto; /* Reset the minimum width */
       width: 100%; /* Take up full width on smaller screens */
+      margin-bottom: 25px;
     }
   }
   
