@@ -38,6 +38,7 @@
   The top blue square, includes a text element
 */
 .part{
+  height:70px;
   width: 200px;
   padding-top: 65px;
   padding-bottom: 65px;
