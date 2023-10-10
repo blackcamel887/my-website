@@ -39,9 +39,9 @@
 */
 .part{
   height:70px;
-  width: 200px;
-  padding-top: 65px;
-  padding-bottom: 65px;
+  width: 220px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   background-color: #61dafb;
   margin-left: auto;
   margin-right: auto;
@@ -83,8 +83,8 @@
 */
 .input{
   font-size: 56px;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   background-color: #61dafb;
   text-align: center;
   border-width: 0;
