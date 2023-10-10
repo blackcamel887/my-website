@@ -16,10 +16,7 @@
   margin: auto;
   padding:5px;
 }
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -29,7 +26,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,14 +38,14 @@
   The top blue square, includes a text element
 */
 .part{
-  width: 13vw;
-  padding-top: calc(13vh - 1.85vw);
-  padding-bottom: calc(13vh - 1.85vw);
+  width: 200px;
+  padding-top: 65px;
+  padding-bottom: 65px;
   background-color: #61dafb;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .App-link {
   color: #61dafb;
@@ -58,11 +55,11 @@
   width:fit-content;
   height: fit-content;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 30px;
   border: 3px solid black;
   border-radius:12%;
   box-shadow: 1px 2px;
-  margin-top: 3vh;
+  margin-top: 20px;
   text-align: center;
   justify-content:center;
 }
@@ -74,7 +71,7 @@
   The text box that is in the top blue square
 */
 .text{
-  font-size: 2.75vw;
+  font-size: 50px;
   color:darkblue;
   text-align: center;
   margin-top: auto;
@@ -84,12 +81,9 @@
   the bottom blue sqaure, this is an input element
 */
 .input{
-  font-size: 3.7vw;
-  min-width: 13vw;
-  max-width: 13vw;
-  min-height: 26vh;
-  max-height: 26vh;
-  width: max-content;
+  font-size: 56px;
+  width: 200px;
+  height: 200px;
   background-color: #61dafb;
   text-align: center;
   border-width: 0;
