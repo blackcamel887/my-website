@@ -38,10 +38,10 @@
   The top blue square, includes a text element
 */
 .part{
-  height:70px;
-  width: 220px;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  height:60px;
+  width: 180px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #61dafb;
   margin-left: auto;
   margin-right: auto;
@@ -73,7 +73,7 @@
   The text box that is in the top blue square
 */
 .text{
-  font-size: 50px;
+  font-size: 40px;
   color:darkblue;
   text-align: center;
   margin-top: auto;
@@ -84,8 +84,8 @@
 */
 .input{
   font-size: 56px;
-  width: 220px;
-  height: 220px;
+  width: 180px;
+  height: 180px;
   background-color: #61dafb;
   text-align: center;
   border-width: 0;
