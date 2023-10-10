@@ -83,7 +83,7 @@
   the bottom blue sqaure, this is an input element
 */
 .input{
-  -webkit-appearance: none; /* Override iOS and macOS styles */
+  appearance: none;
   font-size: 56px;
   width: 180px;
   height: 180px;
