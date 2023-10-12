@@ -20,13 +20,22 @@ function Pick(props){
         }
     }
     if(type==='scissors'){
-        return <img className={styles.img} width={1000} height={1000} src="/images/scissors.png" alt='scissors' onClick={handleOnClick}></img>
+        return (
+        <div className={styles.image_container}> 
+            <Image className={styles.img} width={200} height={200} src="/images/scissors.png" alt='scissors' onClick={handleOnClick}></Image>
+        </div>
+        )
     }
     else if(type==='rock'){
-        return <img className={styles.img} height={349} width={425} src="/images/rock.png" alt='rock' onClick={handleOnClick}></img>
+        return (<div className={styles.image_container}> 
+        <Image className={styles.img} height={349} width={425} src="/images/rock.png" alt='rock' onClick={handleOnClick}></Image>
+        </div>)
     }
     else if(type==='paper'){
-        return <img className={styles.img} height={1200} width={1200} src="/images/paper.png" alt='paper' onClick={handleOnClick}></img>
+        
+        return (<div className={styles.image_container}> 
+        <Image className={styles.img} height={120} width={120} src="/images/paper.png" alt='paper' onClick={handleOnClick}></Image>
+        </div>)
     }
 }
 export default Pick;
